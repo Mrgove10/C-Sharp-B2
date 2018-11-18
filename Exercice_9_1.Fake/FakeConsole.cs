@@ -1,6 +1,7 @@
-﻿using System;
-
+﻿    using System;
+    using Exercice_9_1;
 namespace Exercice_9_1
+
 {
     internal class FakeConsole : IConsole
     {

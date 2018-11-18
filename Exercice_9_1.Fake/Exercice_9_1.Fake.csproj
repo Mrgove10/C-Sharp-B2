@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{EC787374-1853-4E2F-A42F-981728881AE0}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <OutputType>Exe</OutputType>
     <RootNamespace>Exercice_9_1.Fake</RootNamespace>
     <AssemblyName>Exercice_9_1.Fake</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
@@ -55,6 +55,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Exercice_9_1.Dll\Exercice_9_1.Dll.csproj">
+      <Project>{1e3176e9-527f-4176-a1dd-3254e23599e5}</Project>
+      <Name>Exercice_9_1.Dll</Name>
+    </ProjectReference>
     <ProjectReference Include="C:\Users\richa\Desktop\temp\EPSI_B2_2018-master\Exercice_9_1\Exercice_9_1.csproj">
       <Project>{e6a82766-dcf9-4b15-b52d-49d4845e8712}</Project>
       <Name>Exercice_9_1</Name>
