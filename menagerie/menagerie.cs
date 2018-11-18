@@ -16,7 +16,7 @@ namespace menagerie
         /// </summary>
         public void CreationMenagerie()
         {
-      //      debugInit(); //Ajout d'animaux automatique de debuggage
+            // debugInit(); //Ajout d'animaux automatique de debuggage
             menu();
         }
 
