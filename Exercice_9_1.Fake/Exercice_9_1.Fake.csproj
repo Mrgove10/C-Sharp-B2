@@ -59,10 +59,6 @@
       <Project>{1e3176e9-527f-4176-a1dd-3254e23599e5}</Project>
       <Name>Exercice_9_1.Dll</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\richa\Desktop\temp\EPSI_B2_2018-master\Exercice_9_1\Exercice_9_1.csproj">
-      <Project>{e6a82766-dcf9-4b15-b52d-49d4845e8712}</Project>
-      <Name>Exercice_9_1</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

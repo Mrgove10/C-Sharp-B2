@@ -1,5 +1,8 @@
-﻿namespace Exercice_9_1
+﻿namespace Exercice_9_1.Dll
 {
+    /// <summary>
+    /// Enumeration des posibilité
+    /// </summary>
     public enum ChiFouMi
     {
         Pierre = 0,
@@ -8,6 +11,9 @@
         Puit = 3
     }
 
+    /// <summary>
+    /// interface ChiFouMiObjects
+    /// </summary>
     public interface ChiFouMiObject
     {
         ChiFouMi Value { get; }
@@ -20,6 +26,9 @@
         bool Bat(ChiFouMi value);
     }
 
+    /// <summary>
+    /// classe pierre
+    /// </summary>
     public class Pierre : ChiFouMiObject
     {
         public ChiFouMi Value { get { return ChiFouMi.Pierre; } }
@@ -30,6 +39,9 @@
         }
     }
 
+    /// <summary>
+    /// classe Feuille
+    /// </summary>
     public class Feuille : ChiFouMiObject
     {
         public ChiFouMi Value { get { return ChiFouMi.Feuille; } }
@@ -40,6 +52,9 @@
         }
     }
 
+    /// <summary>
+    /// classe ciseaux
+    /// </summary>
     public class Ciseaux : ChiFouMiObject
     {
         public ChiFouMi Value { get { return ChiFouMi.Ciseaux; } }
@@ -50,6 +65,9 @@
         }
     }
 
+    /// <summary>
+    /// classe puit
+    /// </summary>
     public class Puit : ChiFouMiObject
     {
         public ChiFouMi Value { get { return ChiFouMi.Puit; } }
