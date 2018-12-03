@@ -50,6 +50,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercice_9_1.Fake", "Exerci
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercice_9_1.Dll", "Exercice_9_1.Dll\Exercice_9_1.Dll.csproj", "{1E3176E9-527F-4176-A1DD-3254E23599E5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodingGame_TicTacToe", "CodingGame_TicTacToe\CodingGame_TicTacToe.csproj", "{1B85C664-DB57-407E-9459-6C72CA0D5475}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TicTacToe", "TicTacToe", "{24EF53EB-017F-4043-AA92-4F8043B7FD97}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -128,6 +132,10 @@ Global
 		{1E3176E9-527F-4176-A1DD-3254E23599E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E3176E9-527F-4176-A1DD-3254E23599E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E3176E9-527F-4176-A1DD-3254E23599E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B85C664-DB57-407E-9459-6C72CA0D5475}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B85C664-DB57-407E-9459-6C72CA0D5475}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B85C664-DB57-407E-9459-6C72CA0D5475}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B85C664-DB57-407E-9459-6C72CA0D5475}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -151,6 +159,7 @@ Global
 		{5B3263EA-5F42-4A6F-9739-A6D6B39D897B} = {97DA250D-2BAC-4F2B-95AA-00D85C7D0DC7}
 		{EC787374-1853-4E2F-A42F-981728881AE0} = {97DA250D-2BAC-4F2B-95AA-00D85C7D0DC7}
 		{1E3176E9-527F-4176-A1DD-3254E23599E5} = {97DA250D-2BAC-4F2B-95AA-00D85C7D0DC7}
+		{1B85C664-DB57-407E-9459-6C72CA0D5475} = {24EF53EB-017F-4043-AA92-4F8043B7FD97}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9471BAAE-24CC-4ED1-93E6-602F936E0227}
