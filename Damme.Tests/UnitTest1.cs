@@ -98,7 +98,5 @@ namespace Damme.Tests
         }
 
         #endregion Tests Game
-
-      
     }
 }

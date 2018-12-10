@@ -15,7 +15,6 @@ namespace Damme
         /// <returns></returns>
         public bool Validate(Pion pionToMove, int xTo, int yTo, Pion[,] mainField, char player)
         {
-
             //TODO: only workd when 0,0 is in the botom left
             if (pionToMove.X != xTo && pionToMove.Y != yTo)
             {
@@ -35,7 +34,7 @@ namespace Damme
                 if (longeur > 2)
                 {
                     Pion pToGo = mainField[xTo, yTo];
-                   // 
+                    //
                 }
             }
             return false;

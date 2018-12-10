@@ -40,7 +40,7 @@ namespace Damme
         }
 
         /// <summary>
-        /// Switches the player 
+        /// Switches the player
         /// </summary>
         /// <param name="currentPlayerP">Current player to switch</param>
         /// <returns></returns>
