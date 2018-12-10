@@ -1,3 +1,4 @@
+using Damme.Classes;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Damme.Tests
@@ -5,11 +6,6 @@ namespace Damme.Tests
     [TestClass]
     public class UnitTest1
     {
-        [TestMethod]
-        public void TestMethod1()
-        {
-        }
-
         #region Tests Pions
 
         [TestMethod]
@@ -65,6 +61,44 @@ namespace Damme.Tests
             Assert.IsTrue(result[0] == 23 && result[1] == 4);
         }
 
+        [TestMethod]
+        public void Test_Split_3()
+        {
+            Utils U = new Utils();
+            var result = U.StringSpliter("45 6 55");
+            Assert.IsTrue(result[0] == 45 && result[1] == 6);
+        }
+
         #endregion Tests Utils
+
+        #region Tests Game
+
+        [TestMethod]
+        public void Test_Player_Switch_0()
+        {
+            Game G = new Game(new TrueConsole());
+            var result = G.SwitchPlayer('0');
+            Assert.IsTrue(result == '1');
+        }
+
+        [TestMethod]
+        public void Test_Player_Switch_1()
+        {
+            Game G = new Game(new TrueConsole());
+            var result = G.SwitchPlayer('1');
+            Assert.IsTrue(result == '0');
+        }
+
+        [TestMethod]
+        public void Test_Player_Switch_Over()
+        {
+            Game G = new Game(new TrueConsole());
+            var result = G.SwitchPlayer('3');
+            Assert.IsTrue(result == ' ');
+        }
+
+        #endregion Tests Game
+
+      
     }
 }

@@ -1,7 +1,7 @@
-﻿using System;
-using Damme.Interfaces;
+﻿using Damme.Interfaces;
+using System;
 
-namespace Damme
+namespace Damme.Classes
 {
     public class DisplayManager : IDisplay
     {

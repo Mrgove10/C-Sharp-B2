@@ -8,7 +8,8 @@ namespace Damme
         /// <param name="args"></param>
         private static void Main(string[] args)
         {
-            Game Maingame = new Game();
+            IConsole Console = new TrueConsole();
+            Game Maingame = new Game(Console);
             Maingame.StartGame();
         }
     }

@@ -15,9 +15,8 @@
         void WriteLine(string outputString);
 
         /// <summary>
-        /// Writing messages in teh error console.
+        /// Clears the console
         /// </summary>
-        /// <param name="outputString"></param>
-        void WriteErrorLine(string outputString);
+        void Clear();
     }
 }

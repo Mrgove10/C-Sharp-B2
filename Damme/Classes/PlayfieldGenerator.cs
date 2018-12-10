@@ -1,7 +1,14 @@
-﻿namespace Damme
+﻿using Damme.Classes;
+
+namespace Damme
 {
     public class PlayfieldGenerator
     {
+        /// <summary>
+        /// Generates a playing Field
+        /// </summary>
+        /// <param name="size">Size of the playing field</param>
+        /// <returns>Complete playing field</returns>
         public Pion[,] GeneratePlayField(int size)
         {
             Pion[,] field = new Pion[size, size];
@@ -54,7 +61,7 @@
             }
 
             FileManager FM = new FileManager();
-            FM.writeToFile(field);
+            FM.WriteToFile(field);
 
             return field;
         }

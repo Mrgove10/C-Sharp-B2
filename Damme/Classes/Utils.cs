@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Damme
+namespace Damme.Classes
 {
     public class Utils
     {

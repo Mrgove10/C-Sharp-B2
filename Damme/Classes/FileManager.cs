@@ -1,9 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using Damme.Interfaces;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using Damme.Interfaces;
 
-namespace Damme
+namespace Damme.Classes
 {
     public class FileManager : IFile
     {
@@ -11,7 +11,7 @@ namespace Damme
         /// Writes the data to a file
         /// </summary>
         /// <param name="field">Data to write</param>
-        public void writeToFile(Pion[,] field)
+        public void WriteToFile(Pion[,] field)
         {
             List<Pion> filedToList = field.OfType<Pion>().ToList();
 
@@ -21,8 +21,12 @@ namespace Damme
                 finalstr += filedToList[i].PlayerSign;
             }
 
-            string dir = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName + "\\Play-Field.txt";
-            System.IO.File.WriteAllText(dir, finalstr);
+            var directoryInfo = Directory.GetParent(Directory.GetCurrentDirectory()).Parent;
+            if (directoryInfo != null)
+            {
+                string dir = directoryInfo.FullName + "\\Play-Field.txt";
+                File.WriteAllText(dir, finalstr);
+            }
         }
     }
 }

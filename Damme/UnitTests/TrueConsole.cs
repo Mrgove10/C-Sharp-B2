@@ -14,9 +14,9 @@ namespace Damme
             Console.WriteLine(outputString);
         }
 
-        public void WriteErrorLine(string outputString)
+        public void Clear()
         {
-            Console.Error.WriteLine(outputString);
+            Console.Clear();
         }
     }
 }

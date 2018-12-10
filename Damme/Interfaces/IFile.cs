@@ -2,6 +2,6 @@
 {
     public interface IFile
     {
-        void writeToFile(Pion[,] field);
+        void WriteToFile(Pion[,] field);
     }
 }

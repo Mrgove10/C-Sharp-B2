@@ -1,9 +1,23 @@
-﻿using System;
+﻿using Damme.Classes;
 
 namespace Damme
 {
     public class Game
     {
+        /// <summary>
+        /// Game constructor
+        /// </summary>
+        /// <param name="c"></param>
+        public Game(IConsole c)
+        {
+            Console = c;
+        }
+
+        private IConsole Console; //Console variable.
+
+        /// <summary>
+        /// Main Game method to start the game
+        /// </summary>
         public void StartGame()
         {
             PlayfieldGenerator pg = new PlayfieldGenerator();
@@ -25,6 +39,11 @@ namespace Damme
             }
         }
 
+        /// <summary>
+        /// Switches the player 
+        /// </summary>
+        /// <param name="currentPlayerP">Current player to switch</param>
+        /// <returns></returns>
         public char SwitchPlayer(char currentPlayerP)
         {
             if (currentPlayerP == '0')//white
@@ -40,6 +59,11 @@ namespace Damme
             return ' '; // error
         }
 
+        /// <summary>
+        /// Turm of each player
+        /// </summary>
+        /// <param name="player">Current player</param>
+        /// <param name="playField">Playing fied</param>
         public void Turn(char player, Pion[,] playField)
         {
             ValidationEngine validation = new ValidationEngine();
@@ -63,8 +87,8 @@ namespace Damme
             Console.WriteLine("Coordonne de destination [x y]");
 
             int[] coordinatesToMoveTo = utilities.StringSpliter(Console.ReadLine());
-           var result =  validation.Validate(thePion, coordinatesToMoveTo[0], coordinatesToMoveTo[1], playField, player);
-            Console.WriteLine(result);
+            var result = validation.Validate(thePion, coordinatesToMoveTo[0], coordinatesToMoveTo[1], playField, player);
+            Console.WriteLine(result.ToString());
             //    Console.WriteLine(thePion.x + "," + thePion.y + "," + thePion.signe); //Debug
         }
     }
