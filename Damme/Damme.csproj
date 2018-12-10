@@ -42,15 +42,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DisplayManager.cs" />
-    <Compile Include="FileManager.cs" />
+    <Compile Include="Classes\DisplayManager.cs" />
+    <Compile Include="Classes\FileManager.cs" />
     <Compile Include="Game.cs" />
+    <Compile Include="Interfaces\IDisplay.cs" />
+    <Compile Include="Interfaces\IFile.cs" />
+    <Compile Include="Interfaces\IPlayField.cs" />
+    <Compile Include="Interfaces\IUtils.cs" />
     <Compile Include="Pion.cs" />
-    <Compile Include="PlayfieldGenerator.cs" />
+    <Compile Include="Classes\PlayfieldGenerator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Utils.cs" />
-    <Compile Include="ValidationEngine.cs" />
+    <Compile Include="Classes\Utils.cs" />
+    <Compile Include="Interfaces\IValidation.cs" />
+    <Compile Include="Classes\ValidationEngine.cs" />
+    <Compile Include="UnitTests\IConsole.cs" />
+    <Compile Include="UnitTests\TrueConsole.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

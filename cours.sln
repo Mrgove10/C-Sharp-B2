@@ -60,6 +60,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Jeu de damme", "Jeu de damm
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Damme", "Damme\Damme.csproj", "{EC142763-62E1-49BF-8293-E23DABA4FD12}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Damme.Tests", "Damme.Tests\Damme.Tests.csproj", "{9BD85306-7990-43B0-9FBD-67527FE0BC25}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -150,6 +152,10 @@ Global
 		{EC142763-62E1-49BF-8293-E23DABA4FD12}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC142763-62E1-49BF-8293-E23DABA4FD12}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC142763-62E1-49BF-8293-E23DABA4FD12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BD85306-7990-43B0-9FBD-67527FE0BC25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BD85306-7990-43B0-9FBD-67527FE0BC25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BD85306-7990-43B0-9FBD-67527FE0BC25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BD85306-7990-43B0-9FBD-67527FE0BC25}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -176,6 +182,7 @@ Global
 		{1B85C664-DB57-407E-9459-6C72CA0D5475} = {24EF53EB-017F-4043-AA92-4F8043B7FD97}
 		{8C9FB917-20EB-4F40-B87A-DC420AA05612} = {24EF53EB-017F-4043-AA92-4F8043B7FD97}
 		{EC142763-62E1-49BF-8293-E23DABA4FD12} = {0B3857DA-A39B-4388-9159-9231CA9DCDD6}
+		{9BD85306-7990-43B0-9FBD-67527FE0BC25} = {0B3857DA-A39B-4388-9159-9231CA9DCDD6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9471BAAE-24CC-4ED1-93E6-602F936E0227}
