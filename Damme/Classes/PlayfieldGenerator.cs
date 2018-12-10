@@ -50,7 +50,7 @@
             string l = "";
             foreach (var p in field)
             {
-                l = l + p.signe;
+                l = l + p.PlayerSign;
             }
 
             FileManager FM = new FileManager();

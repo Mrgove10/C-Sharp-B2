@@ -1,10 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using Damme.Interfaces;
 
 namespace Damme
 {
-    public class FileManager
+    public class FileManager : IFile
     {
         /// <summary>
         /// Writes the data to a file
@@ -17,7 +18,7 @@ namespace Damme
             string finalstr = "";
             for (int i = 0; i < filedToList.Count; i++)
             {
-                finalstr += filedToList[i].signe;
+                finalstr += filedToList[i].PlayerSign;
             }
 
             string dir = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName + "\\Play-Field.txt";

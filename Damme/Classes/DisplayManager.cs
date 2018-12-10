@@ -1,8 +1,9 @@
 ﻿using System;
+using Damme.Interfaces;
 
 namespace Damme
 {
-    public class DisplayManager
+    public class DisplayManager : IDisplay
     {
         /// <summary>
         /// Generates the 2D view of the playing field
@@ -16,7 +17,7 @@ namespace Damme
                 Console.Write(x + 1 + " ");
                 for (int y = 0; y < 10; y++)
                 {
-                    Console.Write(field[x, y].signe + " ");
+                    Console.Write(field[x, y].PlayerSign + " ");
                 }
                 Console.Write("\n"); //line return char
             }

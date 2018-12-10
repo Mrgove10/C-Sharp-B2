@@ -4,6 +4,11 @@ namespace Damme
 {
     public class Utils
     {
+        /// <summary>
+        /// Splits a string into two integers
+        /// </summary>
+        /// <param name="entryString">String to split</param>
+        /// <returns>Array of two integers</returns>
         public int[] StringSpliter(string entryString)
         {
             int[] temp = new int[2];

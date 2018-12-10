@@ -6,29 +6,43 @@ namespace Damme
     {
         public void StartGame()
         {
-            PlayfieldGenerator PG = new PlayfieldGenerator();
+            PlayfieldGenerator pg = new PlayfieldGenerator();
             DisplayManager screen = new DisplayManager();
             Utils utilities = new Utils();
-            bool Game = true;
+            bool game = true;
             char currentplayer = '0';
 
-            while (Game)
+            while (game)
             {
                 Console.Clear();
-                Pion[,] mainPlayingField = PG.GeneratePlayField(10);
+                Pion[,] mainPlayingField = pg.GeneratePlayField(10);
                 screen.GridView(mainPlayingField);
                 Turn(currentplayer, mainPlayingField);
-                currentplayer = switchplayer(currentplayer);
+                currentplayer = SwitchPlayer(currentplayer);
 
                 Console.WriteLine("Appuyer sur entre pour passer au prochain tour");
                 Console.ReadLine();
             }
+        }
 
-            Console.ReadLine();
+        public char SwitchPlayer(char currentPlayerP)
+        {
+            if (currentPlayerP == '0')//white
+            {
+                return '1';
+            }
+
+            if (currentPlayerP == '1') //white
+            {
+                return '0';
+            }
+
+            return ' '; // error
         }
 
         public void Turn(char player, Pion[,] playField)
         {
+            ValidationEngine validation = new ValidationEngine();
             Utils utilities = new Utils();
 
             if (player == '0')//white
@@ -43,24 +57,15 @@ namespace Damme
 
             Console.WriteLine("Coordonne du pion a bougé [x y]");
 
-            int[] coordinates = utilities.StringSpliter(Console.ReadLine());
-            Pion thePion = playField[coordinates[0] - 1, coordinates[1] - 1];
+            int[] coordinatesInitialPion = utilities.StringSpliter(Console.ReadLine());
+            Pion thePion = playField[coordinatesInitialPion[0] - 1, coordinatesInitialPion[1] - 1];
+
+            Console.WriteLine("Coordonne de destination [x y]");
+
+            int[] coordinatesToMoveTo = utilities.StringSpliter(Console.ReadLine());
+           var result =  validation.Validate(thePion, coordinatesToMoveTo[0], coordinatesToMoveTo[1], playField, player);
+            Console.WriteLine(result);
             //    Console.WriteLine(thePion.x + "," + thePion.y + "," + thePion.signe); //Debug
-        }
-
-        public char switchplayer(char currentPlayerP)
-        {
-            if (currentPlayerP == '0')//white
-            {
-                return '1';
-            }
-
-            if (currentPlayerP == '1') //white
-            {
-                return '0';
-            }
-
-            return ' '; // error
         }
     }
 }

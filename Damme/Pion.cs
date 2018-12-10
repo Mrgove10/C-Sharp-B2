@@ -2,15 +2,15 @@
 {
     public class Pion
     {
-        public int x;
-        public int y;
-        public char signe;
+        public int X;
+        public int Y;
+        public char PlayerSign;
 
         public Pion(int xParam, int yParama, char signeParam)
         {
-            x = xParam;
-            y = yParama;
-            signe = signeParam;
+            X = xParam;
+            Y = yParama;
+            PlayerSign = signeParam;
         }
     }
 }
