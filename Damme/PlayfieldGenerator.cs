@@ -18,30 +18,29 @@
             {
                 if (x == 0 || x == 2)
                 {
-                    for (int y = 0; y < 10; y = y + 2) //blanc = 0
+                    for (int y = 0; y < 10; y = y + 2) //white= 0
                     {
                         field[x, y] = new Pion(x, y, '0');
                     }
                 }
                 if (x == 1 || x == 3)
                 {
-                    for (int y = 1; y < 10; y = y + 2) //blanc = 0
+                    for (int y = 1; y < 10; y = y + 2) //white = 0
                     {
                         field[x, y] = new Pion(x, y, '0');
                     }
                 }
 
-
                 if (x == 6 || x == 8)
                 {
-                    for (int y = 0; y < 10; y = y + 2) //blanc = 0
+                    for (int y = 0; y < 10; y = y + 2) //black = 1
                     {
                         field[x, y] = new Pion(x, y, '1');
                     }
                 }
                 if (x == 7 || x == 9)
                 {
-                    for (int y = 1; y < 10; y = y + 2) //blanc = 0
+                    for (int y = 1; y < 10; y = y + 2) //black = 1
                     {
                         field[x, y] = new Pion(x, y, '1');
                     }

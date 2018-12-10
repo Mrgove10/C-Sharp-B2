@@ -2,7 +2,7 @@
 
 namespace Damme
 {
-    internal class DisplayManager
+    public class DisplayManager
     {
         /// <summary>
         /// Generates the 2D view of the playing field
@@ -10,13 +10,13 @@ namespace Damme
         /// <param name="field">Field to display</param>
         public void GridView(Pion[,] field)
         {
-            Console.WriteLine("  a b c d e f g h i j");
-            for (int i = 0; i < 10; i++)
+            Console.WriteLine("  1 2 3 4 5 6 7 8 9 10");
+            for (int x = 0; x < 10; x++)
             {
-                Console.Write(i + 1 + " ");
-                for (int j = 0; j < 10; j++)
+                Console.Write(x + 1 + " ");
+                for (int y = 0; y < 10; y++)
                 {
-                    Console.Write(field[i, j].signe + " ");
+                    Console.Write(field[x, y].signe + " ");
                 }
                 Console.Write("\n"); //line return char
             }
