@@ -1,4 +1,6 @@
-﻿using System;
+﻿/*
+
+using System;
 using System.Collections.Generic;
 
 namespace CodingGame_TicTacToe
@@ -21,10 +23,6 @@ namespace CodingGame_TicTacToe
             posLigne = posLigne_P;
             posColone = posColone_P;
             typeCase = typesCase_P;
-        }
-
-        public Case()
-        {
         }
     }
 
@@ -71,15 +69,13 @@ namespace CodingGame_TicTacToe
                 }
                 else
                 {
-
                     tourNumero++;
 
                     string[] inputtbx = inputsrawLastPlayed.Split(' ');
                     int lEnnemie = Int32.Parse(inputtbx[0]);
                     int cEnnemie = Int32.Parse(inputtbx[1]);
-                    
-                    tbxprinc[lEnnemie, cEnnemie].typeCase = Ennemi; //assigne le case jouer par el bode a une case dans mon tableaus
 
+                    tbxprinc[lEnnemie, cEnnemie].typeCase = Ennemi; //assigne le case jouer par el bode a une case dans mon tableaus
                     Console.Error.WriteLine("last enemy turn : " + tbxprinc[lEnnemie, cEnnemie].posColone + "," +
                                             tbxprinc[lEnnemie, cEnnemie].posLigne + "," +
                                             tbxprinc[lEnnemie, cEnnemie].typeCase);
@@ -94,7 +90,7 @@ namespace CodingGame_TicTacToe
                     int ligne = Int32.Parse(splitLigne[0]);
                     int col = Int32.Parse(splitLigne[1]);
                     Case currentCase = tbxprinc[ligne, col];
-                    playable.Add(currentCase);                  
+                    playable.Add(currentCase);
                 }
 
                 Case chose = playable[rand.Next(playable.Count)];
@@ -106,3 +102,5 @@ namespace CodingGame_TicTacToe
         }
     }
 }
+
+*/

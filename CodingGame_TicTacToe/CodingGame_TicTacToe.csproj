@@ -42,10 +42,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AI.cs" />
-    <Compile Include="IA2.cs" />
-    <Compile Include="Program.cs" />
-    <Compile Include="Program2.cs" />
+    <Compile Include="IError.cs" />
+    <Compile Include="Program3.cs" />
+    <Compile Include="TrueConsole.cs" />
+    <Compile Include="IConsole.cs" />
+    <Compile Include="Save\ProgramObjet.cs" />
+    <Compile Include="Save\Program2.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
