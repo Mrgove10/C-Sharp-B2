@@ -2,7 +2,7 @@
 
 namespace Damme
 {
-    internal class Game
+    public class Game
     {
         public void StartGame()
         {
@@ -45,7 +45,7 @@ namespace Damme
 
             int[] coordinates = utilities.StringSpliter(Console.ReadLine());
             Pion thePion = playField[coordinates[0] - 1, coordinates[1] - 1];
-        //    Console.WriteLine(thePion.x + "," + thePion.y + "," + thePion.signe); //Debug
+            //    Console.WriteLine(thePion.x + "," + thePion.y + "," + thePion.signe); //Debug
         }
 
         public char switchplayer(char currentPlayerP)

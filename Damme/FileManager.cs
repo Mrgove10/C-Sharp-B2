@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace Damme
 {
-    internal class FileManager
+    public class FileManager
     {
         /// <summary>
         /// Writes the data to a file

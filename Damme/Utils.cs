@@ -2,7 +2,7 @@
 
 namespace Damme
 {
-    internal class Utils
+    public class Utils
     {
         public int[] StringSpliter(string entryString)
         {

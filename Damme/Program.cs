@@ -1,6 +1,6 @@
 namespace Damme
 {
-    internal class Program
+    public class Program
     {
         /// <summary>
         /// This is the main entry point to the application.
